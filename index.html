@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5dd0e2a860.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark">
+      <h3 class="navbar-brand">Weather Dashboard</h3>
+    </div>
+    <div class="row">
+        <aside class="justify-content-center" id="sidebar">
+            <div class="col-12">
+                <h4>Seach for a City: </h4>
+                <input type="text" id="cityInput" /><button class="search" id="citySearch"><i class="fas fa-search"></i></button>
+                <hr>
+                <ul class="list-group"></ul>
+            </div> 
+        </aside>
+        <main class="container" id="main" hidden>
+            <div class="card" id="mainCard">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="card-title"></h3>
+                        <img id="mainIcon" alt="icon" hidden>
+                    </div>
+                </div>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+                <p id="uvIndex"></p>
+            </div>
+            <h3>5-Day Forecast</h3>
+            <div class="row">
+                <div class="card col" id="1">
+                    <h4 id="date1"></h4>
+                    <img src="" alt="" id="icon1">
+                    <p id="temp1"></p>
+                    <p id="humid1"></p>
+                </div>
+                <div class="card col" id="2">
+                    <h4 id="date2"></h4>
+                    <img src="" alt="" id="icon2">
+                    <p id="temp2"></p>
+                    <p id="humid2"></p>
+                </div>
+                <div class="card col" id="3">
+                    <h4 id="date3"></h4>
+                    <img src="" alt="" id="icon3">
+                    <p id="temp3"></p>
+                    <p id="humid3"></p>
+                </div>
+                <div class="card col" id="4">
+                    <h4 id="date4"></h4>
+                    <img src="" alt="" id="icon4">
+                    <p id="temp4"></p>
+                    <p id="humid4"></p>
+                </div>
+                <div class="card col" id="5">
+                    <h4 id="date5"></h4>
+                    <img src="" alt="" id="icon5">
+                    <p id="temp5"></p>
+                    <p id="humid5"></p>
+                </div>
+            </div> 
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
