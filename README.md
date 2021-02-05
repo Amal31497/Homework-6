@@ -10,3 +10,5 @@ Technologies used:
 
 Demonstration:
 ![Demonstration](./Assets/Screenshot/demonstration.png "First pop-up")
+Deployed link:
+https://amal31497.github.io/Weather-Dashboard/
